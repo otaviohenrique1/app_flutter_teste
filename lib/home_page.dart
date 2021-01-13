@@ -1,4 +1,6 @@
+import 'package:app_flutter_teste/src/app_calculadora/form_calculadora.dart';
 import 'package:app_flutter_teste/src/app_player_musica/lista_musica.dart';
+import 'package:app_flutter_teste/src/linear_progress_indicator_exemplo.dart';
 import 'package:flutter/material.dart';
 import 'package:app_flutter_teste/pages/home.dart';
 import 'package:app_flutter_teste/src/drawer_exemplo.dart';
@@ -85,6 +87,23 @@ class _HomePageState extends State<HomePage> {
                         context,
                         MaterialPageRoute(
                           builder: (context) => ListaMusica(),
+                        )),
+                  ),
+                  RaisedButton(
+                    child: Text('LinearProgressIndicator'),
+                    onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              LinearProgressIndicatorExemplo(),
+                        )),
+                  ),
+                  RaisedButton(
+                    child: Text('Calcula medida'),
+                    onPressed: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => FormCalculadora(),
                         )),
                   ),
                 ],

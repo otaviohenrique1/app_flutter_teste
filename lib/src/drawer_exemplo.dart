@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
 
 class DrawerExemplo extends StatelessWidget {
-  final String title;
-
-  DrawerExemplo({Key key, this.title}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(title)),
+      appBar: AppBar(title: Text('DrawerExemplo')),
       body: Center(child: Text('Pagina Texto')),
       drawer: Drawer(
         // Add a ListView to the drawer. This ensures the user can scroll
